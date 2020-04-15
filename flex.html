@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
 
 
   <style type="text/css">
@@ -24,16 +24,35 @@
   	}
   	body{
 		background-color: rgb(0,150,141);
+		font-family: 'Cairo', sans-serif;
   	}
   	nav.navbar.bg-dark.navbar-dark.navbar-custom{
   		background-color: rgb(56,90,124) !important;
+  		
   	}
 .lead{
 color:white;
  
 }
 .nav-item.cvqt{
-	color:white;
+	color:white !important;
+}
+
+.card{
+	height:100%;
+}
+.card-img-top{
+height:50%;
+}
+
+.btn.btn-outline-success.btn-sm{
+	margin-top: 10%;
+}
+.btn.btn-outline-success.btn-sm.second{
+ margin-top:25%;
+}
+ #navmain .nav-link:hover{
+color:white;
 }
 
   </style>
@@ -43,21 +62,25 @@ color:white;
   <body>
     
 
-  		<nav class="navbar bg-dark navbar-dark navbar-custom justify-content-end ">
-  		<div class="container"><a href="" class="navbar-brand"><i class="fas fa-book-reader mr-3"></i>Информирай.Се</a></div>
+  		<nav class="navbar bg-dark navbar-dark navbar-custom navbar-expand-sm fixed-top " id="navmain ">
+  		<div class="container "><a href="" class="navbar-brand"><i class="fas fa-book-reader mr-3"></i>Информирай.Се</a></div>
   		<!-- <a href="" class="btn btn-primary mr-4 " >Вход</a>
 			<a href="" class="btn btn-info" >Регистрация</a> -->
 
-			<ul class="navbar-nav ml-auto nav ">
+<button class="navbar-toggler collapsed flex-row" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-angle-double-down"></i>
+          </button>
+  <div class="navbar-collapse collapse justify-content-end" id="collapsingNavbar">
+			<ul class="navbar-nav flex-row  ">
       <li class="nav-item cvqt" >
-        <a class="nav-link " href="#">Вход </a>
+        <a class="nav-link mr-3 "  href="#">Вход </a>
       </li>
       <li class="nav-item cvqt" >
-        <a class="nav-link" href="# " >Регистрация</a>
+        <a class="nav-link mr-3" href="# " >Регистрация</a>
       </li>
      
   </ul>
-
+</div>
 		</nav>
 		<div id="header" class="jumbotron text-center">
 			<h1 class="display-3 mt-sm-5 pt-sm-5"><strong>Добре дошли!</strong></h1>
@@ -65,39 +88,38 @@ color:white;
 		</div>
 
 <div id="bottom" class="container">
-		<div class="row">
+		<div class="row    ">
 		
-			<div class="col-lg-4 mb-3">
-				<div class="card">
-			  		<img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg" class="card-img-top" alt="...">
+			<div class="col-lg-4 mb-3 " >
+				<div class="card ">
+			  		<img src="https://nstatic.nova.bg/public/pics/nova/article/980x551_1568804053.jpg" class="card-img-top" alt="...">
 			  		<div class="card-body">
 				    <h5 class="card-title">За Нас</h5>
-				    <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-				    <a href="#" class="btn btn-outline-success btn-sm">Download</a>
-				    <a href="" class="btn btn-danger btn-sm"><i class="fas fa-heart"></i></a>
+				    <p class="card-text">Здравейте! Този сайт е създаден с цел да улесни учениците в 12 клас, като им дадем информация за всички университети в България.Към всеки университет сме прикачили линкове към различни форуми, където има мнения по него.</p>
+				    
 			  		</div>
 			</div>
 		</div>
 						<div class="col-lg-4 mb-3">
-				<div class="card">
-			  		<img src="https://lh3.googleusercontent.com/proxy/vk8cxY3g74SeZ5ekrKZMoZtOdoDf5Qhps0AX5zV38BmFbD8lyotbzMaYKXhEnBjWKyBsVRX4SKrF_Jr5P-x1fVNH3P4i8UrWVOgNSgBC6Q3FUuDFzHep6bJCd5JxJVcYUDWyFw" class="card-img-top" alt="...">
+				<div class="card ">
+			  		<img src="https://cache2.24chasa.bg/Images/Cache/494/Image_6717494_126.jpg" class="card-img-top" alt="...">
 			  		<div class="card-body">
 				    <h5 class="card-title">Университети</h5>
-				    <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-				    <a href="#" class="btn btn-outline-success btn-sm">Download</a>
-				    <a href="" class="btn btn-danger btn-sm"><i class="fas fa-heart"></i></a>
+				    <p class="card-text">Тук ще намерите информация за уневерситета, неговото местонахождение, специалностите му, цената и мнения по него.  </p>
+				    <a href="#" class="btn btn-outline-success btn-sm">Избери</a>
+				    
 			  		</div>
 			</div>
 		</div>
 
-					<div class="col-lg-4 mb-3">
-				<div class="card">
-			  		<img src="https://c4.wallpaperflare.com/wallpaper/410/867/750/vector-forest-sunset-forest-sunset-forest-wallpaper-thumb.jpg" class="card-img-top" alt="...">
+					<div class="col-lg-4 mb-3 ">
+				<div class="card " >
+			  		<img src="https://i2.offnews.bg/events/2017/03/28/651311/phpln0e68_800x*.jpg" class="card-img-top" alt="...">
 			  		<div class="card-body">
 				    <h5 class="card-title">Бал</h5>
-				    <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-				    <a href="#" class="btn btn-outline-success btn-sm">Download</a>
-				    <a href="" class="btn btn-danger btn-sm"><i class="fas fa-heart"></i></a>
+				    <p class="card-text">Това е алгоритъм с който ще можете да пресметнете бала си.</p>
+				    <a href="#" class="btn btn-outline-success btn-sm second" >Пресметни</a>
+				    
 			  		</div>
 			</div>
 		</div>
